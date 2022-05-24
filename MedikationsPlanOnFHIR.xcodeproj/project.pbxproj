@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E229D24C27240C6F00A101A8 /* MedicationUKF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229D24B27240C6E00A101A8 /* MedicationUKF.swift */; };
+		E229D26A2745ADEE00A101A8 /* SMART in Frameworks */ = {isa = PBXBuildFile; productRef = E229D2692745ADEE00A101A8 /* SMART */; };
+		E229D26C2745B70500A101A8 /* MPVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229D26B2745B70500A101A8 /* MPVM.swift */; };
+		E229D271274A76DB00A101A8 /* Data+prettyJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E229D270274A76DB00A101A8 /* Data+prettyJson.swift */; };
+		E238A904282A921400739C6A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = E238A903282A921400739C6A /* Error.swift */; };
+		E26700B426DE8B31001805CB /* MedikationsPlanXMLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26700B326DE8B31001805CB /* MedikationsPlanXMLApp.swift */; };
+		E26700B626DE8B31001805CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26700B526DE8B31001805CB /* ContentView.swift */; };
+		E26700B826DE8B32001805CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26700B726DE8B32001805CB /* Assets.xcassets */; };
+		E26700BB26DE8B32001805CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26700BA26DE8B32001805CB /* Preview Assets.xcassets */; };
+		E26700C426DE8E8A001805CB /* XMLCoder in Frameworks */ = {isa = PBXBuildFile; productRef = E26700C326DE8E8A001805CB /* XMLCoder */; };
+		E26700C726DE8EA6001805CB /* PatientUKF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26700C626DE8EA6001805CB /* PatientUKF.swift */; };
+		E26700CA26DE8FE5001805CB /* UKFUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26700C926DE8FE5001805CB /* UKFUtility.swift */; };
+		E26AF0DB276F414A00C41BCC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26AF0DA276F414A00C41BCC /* String.swift */; };
+		E291E0FE27569B0200FA0579 /* FHIRUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E291E0FD27569B0200FA0579 /* FHIRUtility.swift */; };
+		E2B2AD44271EDF5900259AE5 /* MedikationsPlanUKF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2AD43271EDF5900259AE5 /* MedikationsPlanUKF.swift */; };
+		E2B2AD4D2720953C00259AE5 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2AD4C2720953C00259AE5 /* ScannerView.swift */; };
+		E2B2AD502720964D00259AE5 /* ScannerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2AD4F2720964D00259AE5 /* ScannerVM.swift */; };
+		E2B2AD56272158EE00259AE5 /* QrCodeCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2AD55272158EE00259AE5 /* QrCodeCameraDelegate.swift */; };
+		E2B2AD5927215AA800259AE5 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2AD5827215AA800259AE5 /* CameraPreview.swift */; };
+		E2B2AD5B27215B0000259AE5 /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2AD5A27215B0000259AE5 /* QrCodeScannerView.swift */; };
+		E2C03C6927EB94CC00BB64C5 /* UKFUtility+Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C03C6827EB94CC00BB64C5 /* UKFUtility+Patient.swift */; };
+		E2C03C6B27EB94DD00BB64C5 /* UKFUtility+Autor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C03C6A27EB94DD00BB64C5 /* UKFUtility+Autor.swift */; };
+		E2C03C6D27EB94E400BB64C5 /* UKFUtility+Composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C03C6C27EB94E400BB64C5 /* UKFUtility+Composition.swift */; };
+		E2C03C6F27EB94E800BB64C5 /* UKFUtility+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C03C6E27EB94E800BB64C5 /* UKFUtility+Bundle.swift */; };
+		E2C03C7127EB94F000BB64C5 /* UKFUtility+Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C03C7027EB94F000BB64C5 /* UKFUtility+Medication.swift */; };
+		E2C03C7327EB95FD00BB64C5 /* UKFUtility+Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C03C7227EB95FD00BB64C5 /* UKFUtility+Observation.swift */; };
+		E2C040352751097B00DC5BCA /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C040342751097B00DC5BCA /* Dictionary.swift */; };
+		E2C7EF16270721C3008C2CA9 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = E2C7EF15270721C3008C2CA9 /* OAuth2 */; };
+		E2CD97102754DB7A0039373B /* FormViewMedication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CD970F2754DB7A0039373B /* FormViewMedication.swift */; };
+		E2D7E42027DCB55400185CFE /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D7E41F27DCB55400185CFE /* PreviewProvider.swift */; };
+		E2DE814C274ABDE100949888 /* FormViewPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DE814B274ABDE100949888 /* FormViewPatient.swift */; };
+		E2DE814E274AE9FB00949888 /* FormViewAutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DE814D274AE9FB00949888 /* FormViewAutor.swift */; };
+		E2DE8150274B571F00949888 /* FormViewObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DE814F274B571F00949888 /* FormViewObservation.swift */; };
+		E2DF44F526E6907900F7EC46 /* AutorUKF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF44F426E6907900F7EC46 /* AutorUKF.swift */; };
+		E2DF44F726E6908100F7EC46 /* ObservationUKF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF44F626E6908100F7EC46 /* ObservationUKF.swift */; };
+		E2DF44FB26E7BD3500F7EC46 /* SMARTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF44FA26E7BD3500F7EC46 /* SMARTClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E229D24B27240C6E00A101A8 /* MedicationUKF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationUKF.swift; sourceTree = "<group>"; };
+		E229D26B2745B70500A101A8 /* MPVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVM.swift; sourceTree = "<group>"; };
+		E229D270274A76DB00A101A8 /* Data+prettyJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+prettyJson.swift"; sourceTree = "<group>"; };
+		E238A903282A921400739C6A /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		E26700B026DE8B31001805CB /* MedikationsPlanOnFHIR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedikationsPlanOnFHIR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26700B326DE8B31001805CB /* MedikationsPlanXMLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedikationsPlanXMLApp.swift; sourceTree = "<group>"; };
+		E26700B526DE8B31001805CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E26700B726DE8B32001805CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E26700BA26DE8B32001805CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E26700BC26DE8B32001805CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26700C626DE8EA6001805CB /* PatientUKF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientUKF.swift; sourceTree = "<group>"; };
+		E26700C926DE8FE5001805CB /* UKFUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UKFUtility.swift; sourceTree = "<group>"; };
+		E26AF0DA276F414A00C41BCC /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E291E0FD27569B0200FA0579 /* FHIRUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FHIRUtility.swift; sourceTree = "<group>"; };
+		E2B2AD43271EDF5900259AE5 /* MedikationsPlanUKF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedikationsPlanUKF.swift; sourceTree = "<group>"; };
+		E2B2AD4C2720953C00259AE5 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		E2B2AD4F2720964D00259AE5 /* ScannerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVM.swift; sourceTree = "<group>"; };
+		E2B2AD55272158EE00259AE5 /* QrCodeCameraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeCameraDelegate.swift; sourceTree = "<group>"; };
+		E2B2AD5827215AA800259AE5 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		E2B2AD5A27215B0000259AE5 /* QrCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerView.swift; sourceTree = "<group>"; };
+		E2C03C6827EB94CC00BB64C5 /* UKFUtility+Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UKFUtility+Patient.swift"; sourceTree = "<group>"; };
+		E2C03C6A27EB94DD00BB64C5 /* UKFUtility+Autor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UKFUtility+Autor.swift"; sourceTree = "<group>"; };
+		E2C03C6C27EB94E400BB64C5 /* UKFUtility+Composition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UKFUtility+Composition.swift"; sourceTree = "<group>"; };
+		E2C03C6E27EB94E800BB64C5 /* UKFUtility+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UKFUtility+Bundle.swift"; sourceTree = "<group>"; };
+		E2C03C7027EB94F000BB64C5 /* UKFUtility+Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UKFUtility+Medication.swift"; sourceTree = "<group>"; };
+		E2C03C7227EB95FD00BB64C5 /* UKFUtility+Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UKFUtility+Observation.swift"; sourceTree = "<group>"; };
+		E2C040342751097B00DC5BCA /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		E2CD970F2754DB7A0039373B /* FormViewMedication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewMedication.swift; sourceTree = "<group>"; };
+		E2D7E41F27DCB55400185CFE /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		E2DE814B274ABDE100949888 /* FormViewPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewPatient.swift; sourceTree = "<group>"; };
+		E2DE814D274AE9FB00949888 /* FormViewAutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewAutor.swift; sourceTree = "<group>"; };
+		E2DE814F274B571F00949888 /* FormViewObservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewObservation.swift; sourceTree = "<group>"; };
+		E2DF44F426E6907900F7EC46 /* AutorUKF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorUKF.swift; sourceTree = "<group>"; };
+		E2DF44F626E6908100F7EC46 /* ObservationUKF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationUKF.swift; sourceTree = "<group>"; };
+		E2DF44FA26E7BD3500F7EC46 /* SMARTClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMARTClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E26700AD26DE8B31001805CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E229D26A2745ADEE00A101A8 /* SMART in Frameworks */,
+				E2C7EF16270721C3008C2CA9 /* OAuth2 in Frameworks */,
+				E26700C426DE8E8A001805CB /* XMLCoder in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E229D26F274A76C200A101A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E229D270274A76DB00A101A8 /* Data+prettyJson.swift */,
+				E2D7E41F27DCB55400185CFE /* PreviewProvider.swift */,
+				E26AF0DA276F414A00C41BCC /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E26700A726DE8B31001805CB = {
+			isa = PBXGroup;
+			children = (
+				E26700B226DE8B31001805CB /* MedikationsPlanOnFHIR */,
+				E26700B126DE8B31001805CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E26700B126DE8B31001805CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E26700B026DE8B31001805CB /* MedikationsPlanOnFHIR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E26700B226DE8B31001805CB /* MedikationsPlanOnFHIR */ = {
+			isa = PBXGroup;
+			children = (
+				E229D26F274A76C200A101A8 /* Extensions */,
+				E2DF44F826E690DF00F7EC46 /* Model */,
+				E26700C826DE8FDB001805CB /* ViewModel */,
+				E2DF44F926E690FC00F7EC46 /* View */,
+				E2B2AD4A272094F300259AE5 /* Camera */,
+				E26700B726DE8B32001805CB /* Assets.xcassets */,
+				E26700BC26DE8B32001805CB /* Info.plist */,
+				E26700B926DE8B32001805CB /* Preview Content */,
+			);
+			path = MedikationsPlanOnFHIR;
+			sourceTree = "<group>";
+		};
+		E26700B926DE8B32001805CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E26700BA26DE8B32001805CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E26700C826DE8FDB001805CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2C03C6727EB94B700BB64C5 /* UKFUtility */,
+				E229D26B2745B70500A101A8 /* MPVM.swift */,
+				E2DF44FA26E7BD3500F7EC46 /* SMARTClient.swift */,
+				E2C040342751097B00DC5BCA /* Dictionary.swift */,
+				E291E0FD27569B0200FA0579 /* FHIRUtility.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E2B2AD4A272094F300259AE5 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E2B2AD4E2720963B00259AE5 /* ViewModel */,
+				E2B2AD4B2720952E00259AE5 /* View */,
+				E2B2AD54272158AC00259AE5 /* Delegate */,
+				E2B2AD5727215A8400259AE5 /* CameraPreview */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E2B2AD4B2720952E00259AE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2B2AD4C2720953C00259AE5 /* ScannerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2B2AD4E2720963B00259AE5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2B2AD4F2720964D00259AE5 /* ScannerVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E2B2AD54272158AC00259AE5 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E2B2AD55272158EE00259AE5 /* QrCodeCameraDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		E2B2AD5727215A8400259AE5 /* CameraPreview */ = {
+			isa = PBXGroup;
+			children = (
+				E2B2AD5827215AA800259AE5 /* CameraPreview.swift */,
+				E2B2AD5A27215B0000259AE5 /* QrCodeScannerView.swift */,
+			);
+			path = CameraPreview;
+			sourceTree = "<group>";
+		};
+		E2C03C6727EB94B700BB64C5 /* UKFUtility */ = {
+			isa = PBXGroup;
+			children = (
+				E26700C926DE8FE5001805CB /* UKFUtility.swift */,
+				E2C03C6A27EB94DD00BB64C5 /* UKFUtility+Autor.swift */,
+				E2C03C6E27EB94E800BB64C5 /* UKFUtility+Bundle.swift */,
+				E2C03C6C27EB94E400BB64C5 /* UKFUtility+Composition.swift */,
+				E2C03C7027EB94F000BB64C5 /* UKFUtility+Medication.swift */,
+				E2C03C7227EB95FD00BB64C5 /* UKFUtility+Observation.swift */,
+				E2C03C6827EB94CC00BB64C5 /* UKFUtility+Patient.swift */,
+			);
+			path = UKFUtility;
+			sourceTree = "<group>";
+		};
+		E2DE814A274ABDD500949888 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				E2DE814B274ABDE100949888 /* FormViewPatient.swift */,
+				E2DE814D274AE9FB00949888 /* FormViewAutor.swift */,
+				E2DE814F274B571F00949888 /* FormViewObservation.swift */,
+				E2CD970F2754DB7A0039373B /* FormViewMedication.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		E2DF44F826E690DF00F7EC46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2B2AD43271EDF5900259AE5 /* MedikationsPlanUKF.swift */,
+				E26700C626DE8EA6001805CB /* PatientUKF.swift */,
+				E2DF44F426E6907900F7EC46 /* AutorUKF.swift */,
+				E2DF44F626E6908100F7EC46 /* ObservationUKF.swift */,
+				E229D24B27240C6E00A101A8 /* MedicationUKF.swift */,
+				E238A903282A921400739C6A /* Error.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2DF44F926E690FC00F7EC46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E26700B326DE8B31001805CB /* MedikationsPlanXMLApp.swift */,
+				E26700B526DE8B31001805CB /* ContentView.swift */,
+				E2DE814A274ABDD500949888 /* Forms */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E26700AF26DE8B31001805CB /* MedikationsPlanOnFHIR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26700BF26DE8B32001805CB /* Build configuration list for PBXNativeTarget "MedikationsPlanOnFHIR" */;
+			buildPhases = (
+				E26700AC26DE8B31001805CB /* Sources */,
+				E26700AD26DE8B31001805CB /* Frameworks */,
+				E26700AE26DE8B31001805CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedikationsPlanOnFHIR;
+			packageProductDependencies = (
+				E26700C326DE8E8A001805CB /* XMLCoder */,
+				E2C7EF15270721C3008C2CA9 /* OAuth2 */,
+				E229D2692745ADEE00A101A8 /* SMART */,
+			);
+			productName = MedikationsPlanXML;
+			productReference = E26700B026DE8B31001805CB /* MedikationsPlanOnFHIR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E26700A826DE8B31001805CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E26700AF26DE8B31001805CB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = E26700AB26DE8B31001805CB /* Build configuration list for PBXProject "MedikationsPlanOnFHIR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E26700A726DE8B31001805CB;
+			packageReferences = (
+				E26700C226DE8E8A001805CB /* XCRemoteSwiftPackageReference "XMLCoder" */,
+				E2C7EF14270721C3008C2CA9 /* XCRemoteSwiftPackageReference "OAuth2" */,
+				E229D2682745ADEE00A101A8 /* XCRemoteSwiftPackageReference "Swift-SMART" */,
+			);
+			productRefGroup = E26700B126DE8B31001805CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E26700AF26DE8B31001805CB /* MedikationsPlanOnFHIR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E26700AE26DE8B31001805CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26700BB26DE8B32001805CB /* Preview Assets.xcassets in Resources */,
+				E26700B826DE8B32001805CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E26700AC26DE8B31001805CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C03C6D27EB94E400BB64C5 /* UKFUtility+Composition.swift in Sources */,
+				E2C03C6927EB94CC00BB64C5 /* UKFUtility+Patient.swift in Sources */,
+				E2B2AD56272158EE00259AE5 /* QrCodeCameraDelegate.swift in Sources */,
+				E2C040352751097B00DC5BCA /* Dictionary.swift in Sources */,
+				E2D7E42027DCB55400185CFE /* PreviewProvider.swift in Sources */,
+				E229D24C27240C6F00A101A8 /* MedicationUKF.swift in Sources */,
+				E2B2AD4D2720953C00259AE5 /* ScannerView.swift in Sources */,
+				E26700B626DE8B31001805CB /* ContentView.swift in Sources */,
+				E2C03C7327EB95FD00BB64C5 /* UKFUtility+Observation.swift in Sources */,
+				E2DE814E274AE9FB00949888 /* FormViewAutor.swift in Sources */,
+				E26700CA26DE8FE5001805CB /* UKFUtility.swift in Sources */,
+				E2DE814C274ABDE100949888 /* FormViewPatient.swift in Sources */,
+				E26700B426DE8B31001805CB /* MedikationsPlanXMLApp.swift in Sources */,
+				E2DF44F726E6908100F7EC46 /* ObservationUKF.swift in Sources */,
+				E229D271274A76DB00A101A8 /* Data+prettyJson.swift in Sources */,
+				E238A904282A921400739C6A /* Error.swift in Sources */,
+				E2CD97102754DB7A0039373B /* FormViewMedication.swift in Sources */,
+				E2B2AD502720964D00259AE5 /* ScannerVM.swift in Sources */,
+				E2B2AD44271EDF5900259AE5 /* MedikationsPlanUKF.swift in Sources */,
+				E2C03C7127EB94F000BB64C5 /* UKFUtility+Medication.swift in Sources */,
+				E229D26C2745B70500A101A8 /* MPVM.swift in Sources */,
+				E26AF0DB276F414A00C41BCC /* String.swift in Sources */,
+				E291E0FE27569B0200FA0579 /* FHIRUtility.swift in Sources */,
+				E2C03C6B27EB94DD00BB64C5 /* UKFUtility+Autor.swift in Sources */,
+				E2DF44FB26E7BD3500F7EC46 /* SMARTClient.swift in Sources */,
+				E2B2AD5B27215B0000259AE5 /* QrCodeScannerView.swift in Sources */,
+				E2B2AD5927215AA800259AE5 /* CameraPreview.swift in Sources */,
+				E26700C726DE8EA6001805CB /* PatientUKF.swift in Sources */,
+				E2DE8150274B571F00949888 /* FormViewObservation.swift in Sources */,
+				E2C03C6F27EB94E800BB64C5 /* UKFUtility+Bundle.swift in Sources */,
+				E2DF44F526E6907900F7EC46 /* AutorUKF.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E26700BD26DE8B32001805CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E26700BE26DE8B32001805CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E26700C026DE8B32001805CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MedikationsPlanOnFHIR/Preview Content\"";
+				DEVELOPMENT_TEAM = GB63D9G8WE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MedikationsPlanOnFHIR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Charite.MedikationsPlanOnFHIR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E26700C126DE8B32001805CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MedikationsPlanOnFHIR/Preview Content\"";
+				DEVELOPMENT_TEAM = GB63D9G8WE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MedikationsPlanOnFHIR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Charite.MedikationsPlanOnFHIR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E26700AB26DE8B31001805CB /* Build configuration list for PBXProject "MedikationsPlanOnFHIR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26700BD26DE8B32001805CB /* Debug */,
+				E26700BE26DE8B32001805CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26700BF26DE8B32001805CB /* Build configuration list for PBXNativeTarget "MedikationsPlanOnFHIR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26700C026DE8B32001805CB /* Debug */,
+				E26700C126DE8B32001805CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E229D2682745ADEE00A101A8 /* XCRemoteSwiftPackageReference "Swift-SMART" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alonsoss/Swift-SMART.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E26700C226DE8E8A001805CB /* XCRemoteSwiftPackageReference "XMLCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MaxDesiatov/XMLCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.0;
+			};
+		};
+		E2C7EF14270721C3008C2CA9 /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E229D2692745ADEE00A101A8 /* SMART */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E229D2682745ADEE00A101A8 /* XCRemoteSwiftPackageReference "Swift-SMART" */;
+			productName = SMART;
+		};
+		E26700C326DE8E8A001805CB /* XMLCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E26700C226DE8E8A001805CB /* XCRemoteSwiftPackageReference "XMLCoder" */;
+			productName = XMLCoder;
+		};
+		E2C7EF15270721C3008C2CA9 /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2C7EF14270721C3008C2CA9 /* XCRemoteSwiftPackageReference "OAuth2" */;
+			productName = OAuth2;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E26700A826DE8B31001805CB /* Project object */;
+}

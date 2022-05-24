@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OAuth2",
+        "repositoryURL": "https://github.com/p2/OAuth2.git",
+        "state": {
+          "branch": "master",
+          "revision": "30f46ad74bcbe7013fb340e54f41bc9e6d2ce994",
+          "version": null
+        }
+      },
+      {
+        "package": "FHIR",
+        "repositoryURL": "https://github.com/smart-on-fhir/Swift-FHIR",
+        "state": {
+          "branch": null,
+          "revision": "b68fb5d6c8137de4a06894e683dc1a726a832907",
+          "version": "4.2.1"
+        }
+      },
+      {
+        "package": "SMART",
+        "repositoryURL": "https://github.com/alonsoss/Swift-SMART.git",
+        "state": {
+          "branch": "master",
+          "revision": "ec49172f47d606f80afede73fc9573b86218ecd1",
+          "version": null
+        }
+      },
+      {
+        "package": "XMLCoder",
+        "repositoryURL": "https://github.com/MaxDesiatov/XMLCoder",
+        "state": {
+          "branch": null,
+          "revision": "887de88b37b2d691d67db950770e09776229cf6d",
+          "version": "0.13.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
